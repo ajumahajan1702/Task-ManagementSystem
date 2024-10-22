@@ -1,0 +1,148 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  /* Center Alignment */
+  #div1 {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Typography */
+  h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+    width: 30%;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  @media only screen and (max-width: 600px) {
+    #div1 {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    table {
+      font-size: 14px;
+    }
+  
+    button, input[type="text"] {
+      width: 100%;
+
+    }
+  }
+ 
+
+
+
+  /* General Table Styling */
+#div2 {
+    max-width: 100%;
+    overflow-x: auto; /* Adds horizontal scroll for smaller screens */
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 90%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  td, th {
+    padding: 12px;
+    border: 2px solid #0f0c0c;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  td {
+    word-wrap: break-word;
+  }
+  
+  /* Table Header Styling */
+  table tr:first-child {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #c9302c;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+  
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+  
+    tr {
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+    }
+  
+    td {
+      border: none;
+      position: relative;
+      padding-left: 50%;
+      white-space: normal;
+      text-align: right;
+    }
+  
+    td:before {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      white-space: nowrap;
+      text-align: left;
+      font-weight: bold;
+      content: attr(data-label);
+    }
+  }
+  

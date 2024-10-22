@@ -1,0 +1,23 @@
+<div align="center" id="div1">
+  <h2 style="font-family: align-self">Task Add here.....</h2>
+  <button (click)="logout()">Logout</button> <br /><br />
+  Task Details : <input type="text" [(ngModel)]="details" /> <br /><br />
+  <button (click)="add()">Add New task</button><br /><br />
+</div>
+<hr />
+<div id="div2">
+  <table>
+    <tr>
+      <td>Sr No.</td>
+      <td>Details</td>
+      <td>Actions</td>
+    </tr>
+    <tr *ngFor="let task of tasks; let i = index" border="2">
+      <td>{{ i + 1 }}</td>
+      <td>{{ task.details }}</td>
+      <td>
+        <button (click)="delete(task)">Delete</button>
+      </td>
+    </tr>
+  </table>
+</div>
